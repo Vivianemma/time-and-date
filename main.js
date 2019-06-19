@@ -29,26 +29,3 @@ show()
 
 
 
-const hourHand = document.querySelector('[data-hour-hand]')
-const minuteHand = document.querySelector('[data-minute-hand]')
-const secondHand = document.querySelector('[data-second-hand]')
-
-
-function clock(){
-    const current = new Date()
-    const secondRatio =  current.getSeconds() / 60 
-    const minuteRatio = (secondRatio + current.getMinutes()
-    ) / 60 
-    const hourRatio = (minuteRatio + current.getHours()) / 12
-
-    setRotation(hourHand, hourRatio)
-    setRotation(minuteHand, minuteRatio)
-    setRotation(secondHand, secondRatio)
-    
-    setTimeout(clock, 1000);
-}
-
-function setRotation(element, rotationRatio){
-    element.style.setProperty('--rotation', rotationRatio * 360)
-}
-clock()

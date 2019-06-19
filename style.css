@@ -4,8 +4,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
-
 }
 
 .display {
@@ -13,111 +11,138 @@ body {
     font-size: 20px;
     font-family: Orbitron;
     letter-spacing: 7px;
-    /* margin-top:30%; */
+    margin-top:35%;
     text-align:center;
     text-shadow: rgb(5, 5, 5) 0px 0px 100px;
 }
 .content{
-    width: 100%;
-    margin: auto;
+    width: 20%;
+    margin: auto; 
     box-shadow: 0px 0px 10px #17D4FE;
-    height: 95vh;
+    height: 60vh;
     background-image: url("thinking_man_PNG11606.png");
     border-radius: 5px;
-    border: 1px solid transparent;
-    /* margin-top: 5%; */
+    border: 1px solid transparent; 
+    margin-top: 10%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 
 }
- 
-*, *::after, *::before{
-    box-sizing: border-box;
-    font-family: Gothan Rounded, sans-serif;
-}
-.clock{
-    width: 150px;
-    height: 150px;
+ .time{
+    text-shadow: rgb(5, 5, 5) 0px 0px 100px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
     color: #fff;
-    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
-    border: 2px solid;
-    border-radius: 50%;
-    position: relative;
-    margin: auto;
-    margin-top: 15%;
-
-}
-.clock .number{
-    --rotation:0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background: red; */
-    text-align-last: center;
-    transform: rotate(var(--rotation));
-    font-size: 15px;
-}
-.clock .number1 { --rotation: 30deg;}
-.clock .number2 { --rotation: 60deg;}
-.clock .number3 { --rotation: 90deg;}
-.clock .number4 { --rotation: 120deg;}
-.clock .number5 { --rotation: 150deg;}
-.clock .number6 { --rotation: 180deg;}
-.clock .number7 { --rotation: 210deg;}
-.clock .number8 { --rotation: 240deg;}
-.clock .number9 { --rotation: 270deg;}
-.clock .number10 { --rotation: 300deg;}
-.clock .number11 { --rotation: 330deg;}
-
-.clock::after{
-    content: '';
-    position: absolute;
-    background: black;
-    z-index: 11;
-    width: 15px;
-    height:15px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50px;
-}
-.clock .hand {
-    --rotation: 0;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    z-index: 10;
-    background-color: black;
-    border: 1px solid white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    transform-origin: bottom;
-    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
-}
-.clock .hand.second{
-    width: 5px;
-    height: 45%;
-    background: red;
-    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
-}
-.clock .hand.minute{
-    width: 7px;
-    height: 40%;
-    background: black;
-    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
-}
-.clock .hand.hour{
-    width: 10px;
-    height: 35%;
-    background: black;
-    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
-}
-
-.time{
-    color: #fff;
-    text-shadow: black 0px 0px 10px;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+ }
+ @media screen and (max-width:1080px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:1000px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:900px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:800px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:700px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:600px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:520px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:460px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:400px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:360px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
+ @media screen and (max-width:320px){
+    .content{
+        width: auto;
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .display{
+        margin-top: 80%;
+    }
+ }
