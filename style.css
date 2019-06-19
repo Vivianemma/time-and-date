@@ -1,10 +1,11 @@
 body {
-    background: #e6e6e6;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
+
 }
 
 .display {
@@ -12,19 +13,23 @@ body {
     font-size: 20px;
     font-family: Orbitron;
     letter-spacing: 7px;
-    margin-top:30%;
+    /* margin-top:30%; */
     text-align:center;
-    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
+    text-shadow: rgb(5, 5, 5) 0px 0px 100px;
 }
 .content{
-    width: 20vw;
+    width: 100%;
     margin: auto;
-    box-shadow: 0px 0px 10px #fff;
-    height: 60vh;
-    background:#17D4FE;
+    box-shadow: 0px 0px 10px #17D4FE;
+    height: 95vh;
+    background-image: url("thinking_man_PNG11606.png");
     border-radius: 5px;
     border: 1px solid transparent;
-    margin-top: 5%;
+    /* margin-top: 5%; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
 
 }
  
@@ -33,14 +38,16 @@ body {
     font-family: Gothan Rounded, sans-serif;
 }
 .clock{
-    width: 100px;
-    height: 100px;
-    background: #fff;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
     border: 2px solid;
     border-radius: 50%;
     position: relative;
-    margin-left:13%;
-    margin-top:10%;
+    margin: auto;
+    margin-top: 15%;
+
 }
 .clock .number{
     --rotation:0;
@@ -93,14 +100,24 @@ body {
     width: 5px;
     height: 45%;
     background: red;
+    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
 }
 .clock .hand.minute{
     width: 7px;
     height: 40%;
     background: black;
+    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
 }
 .clock .hand.hour{
     width: 10px;
     height: 35%;
     background: black;
+    text-shadow: rgb(5, 5, 5) 0px 0px 5px;
+}
+
+.time{
+    color: #fff;
+    text-shadow: black 0px 0px 10px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
